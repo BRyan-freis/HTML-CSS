@@ -9,8 +9,6 @@
 <body>
 
     <form action="registro.php" method="get">
-        <div class="png">
-            <img src="./IMG/image.png" alt="Docs Forms">
 
         <div class="container">
             <div class="caixona">    
@@ -97,7 +95,7 @@
             <datalist id="livros">
                 <option value="Meu pé de laranja lima"></option>
                 <option value="O pequeno príncipe"></option>
-                <option value="five nights at freddy's: olhos prateados"></option>
+                <option value="Five nights at freddy's: olhos prateados"></option>
                 <option value="O morro dos ventos uivantes"></option>
             </datalist>
          
@@ -110,24 +108,104 @@
  
             <!--Input Radio-->
             <div>
-                <label for="genero">Qual é o seu género:</label>
-                    <div class="radio">
-                        <input type="radio" name="Mulher cis" value="feminino"/>
-                        <label for="Mulher">Mulher cis</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="Homem cis" value="feminino"/>
-                       <label for="homem">homem cis</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="Mulher trans" value="feminino"/>
-                       <label for="mulher trans">Mulher trans</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="homem trans" value="feminino"/>
-                       <label for="homem trans">homem trans</label>
-                    </div>
+                <label for="genero">Qual é o seu género</label>
+                <br>
+                <div class="radio">
+                    <input type="radio" value="Mulher" name="genero"/>
+                    <label for="Mulher">Mulher</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" value="Homem" name="genero"/>
+                    <label for="Homem">Homem</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" value="Nao-binario" name="genero"/>
+                    <label for="nao-binario">Não Binário</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" value="Prefiro-nao-inforar" name="genero"/>
+                    <label for="Prefiro-nao-inforar">Prefiro não informar</label>
+                </div>
             </div>
+         
+
+        <!-- Input Checkbox  -->
+            <div>
+            <label for="linguasestrangeiras"> Quais línguas você pretende estudar:</label>
+            
+        <!-- Reaproveitando o CSS da *class radio -->
+
+        <div class="radio">
+            <input type="checkbox" name="linguasestrangeiras" value="ingles">
+            <label for="ingles">Inglês</label>
+        </div>
+            <br>
+        <div class="radio">
+            <input type="checkbox" name="linguasestrangeiras" value="espanhol">
+             <label for="espanhol">Espanhol</label>
+        </div>
+            <br>
+        <div class="radio">
+            <input type="checkbox" name="linguasestrangeiras" value="alemao">
+            <label for="alemao">Alemão</label>
+        </div>
+            </div>
+
+        <!-- Input Data -->
+        <div>
+            <label for="datadenascimento">Data de nascimento</label>
+            <br>
+            <input type="date" name="datadenascimento">
+        </div>
+
+        <!-- Input File -->
+        <div>
+            <label for="arquivo">Insira o seu currículo em PDF</label>
+            <br>
+            <input type="file" name="arquivo">
+        </div>
+
+        <!-- Input number -->
+        <div>
+            <label for="certificados">Quantos certificados você possui?</label>
+            <br>
+            <input type="number" name="certificados">
+        </div>
+
+        <!-- Input E-mail -->
+             
+        <div>
+            <label for="emailinserido">Insira o seu E-mail:</label>
+            <br>
+            <input type="email" name="emailinserido">
+        </div>
+
+        <!-- Atributo Value -->
+        <div>
+            <label for="confirmaraula"> Você assistiu a aula de Treinamento da empresa abaixo:</label>
+            <br>
+            <input type="text" value="Confirmo que assiti!" name="confirmaraula">
+        </div>
+
+        <!-- Atributo disabled -->
+            <div>
+                <p> Informe seu RG: </p>
+                    <input type="text" value="Não precisa preencher" disabled>
+            </div>
+
+        <!-- Atributo Placeholder -->
+         <div>
+            <label for="pesquisa"> Como você achou o nosso site? </label>
+            <br>
+            <input type="text" name="pesquisa" placeholder="No Google ou Instagram">
+         </div>
+
+         <!-- Atributo Required -->
+          <div>
+            <label for="sobrenome"> Digite o seu Sobrenome </label>
+            <br>
+            <input type="text" name="sobrenome" placeholder="Sobrenome completo" required>
+          </div>
  
         <!-- Limpando/Resetando o formulario -->
             <input type="reset" value="Limpar"/>
@@ -138,9 +216,6 @@
             </div>       
         </div>    
     </div>
- 
- 
- 
     </form>
 </body>
 </html>
