@@ -152,3 +152,47 @@ align-items: flex-end;
 .flex-basis .maior {
     flex-grow: 1;
 }
+
+/* Flex-Shrink */
+
+.flex-shrink{
+    display: flex;
+}
+.flex-shrink .caixa{
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 300px;
+    width: auto;
+}
+ 
+.flex-shrink .menor{
+    flex-shrink: 2;
+}
+ 
+/* Flex Shorthand */
+
+.shorthand{
+    display: flex;
+}
+.shorthand .caixa{
+    flex: 1 1 50px;  /*1 de grow, 1 de shrink e 50px de basis*/
+}
+ 
+.shorthand .diferenciada{
+    flex: 4 1 300px; /*4 de grow, 1 de shrink e 300px de basis*/
+}
+/* align-self */
+
+.align-self{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    border: 2px solid black;
+}
+.align-self .diferenciada{
+    align-self: flex-end;
+}
+ 
+.align-self .diferenciada2{
+    align-self: flex-start;
+}
